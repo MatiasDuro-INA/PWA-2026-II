@@ -25,7 +25,7 @@ const BuscarPalindromo = (palabras) => {
         let palabraSanatizada = palabra.toLowerCase()
 
 
-        if(true){ // true hay que reemplazarlo por la condicion que evalua palabra == palabra
+        if(true){ // true hay que reemplazarlo por la condicion que evalua palabraSanatizada == palabraInvertida
 
             // agregar si cumple al array Palindromas
         }
@@ -33,7 +33,7 @@ const BuscarPalindromo = (palabras) => {
     // 1- Separar cada palabra en letras
     // 2- Invertir las palabras
     // 3- Volver a unir las palabras
-    // 4- Compara palabra == palabraInvertida
+    // 4- Compara palabraSanatizada == palabraInvertida
 
 
     return Palindromas
