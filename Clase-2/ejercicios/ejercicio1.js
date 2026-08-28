@@ -12,12 +12,20 @@ const usuarios = [
 
 const separarUsuarios = (usuario) => {
 
-    // inicializar las variables de hombres y mujeres
+    let mujeres = []
+    let hombres = []
 
-    //  SI O SI CON EL FOR OF
+    for (const user of usuarios) {
+        
+        if(user.sexo === "F"){
+            mujeres.push(user)
+        }else{
+            hombres.push(user)
+        }
+    }
 
+    return { mujeres, hombres}
 
-    
 }
 
 const resultado = separarUsuarios(usuarios)
