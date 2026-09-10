@@ -85,7 +85,7 @@ numbers.forEach(number => {
 });
 
 
-let arrayMayores = numbers.map(number => {
+let arrayMayores = numbers.map((number) => {
     // console.log(number > 18);
     if(number > 18){
         return number
