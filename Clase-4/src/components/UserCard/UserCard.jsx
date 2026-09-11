@@ -1,4 +1,10 @@
-export const UserCard = ({user, colorNombre}) => {
+import { Edad } from "./Card/Edad"
+import { Email } from "./Card/Email"
+import { Titulo } from "./Card/Titulo"
+import "./UserCard.css"
+
+
+export const UserCard = ({user}) => {
 
     // para mejorar esto, podemos DESESTRUCTURAR LAS PROPS
     // Si yo se, que props van a venir
@@ -13,10 +19,13 @@ export const UserCard = ({user, colorNombre}) => {
     
 
     return (
-        <div>
-            <h2 style={{color: `${colorNombre}`}} >Nombre: {user.nombre}</h2>
+        <div className="cardContainer">
+            {/* 
             <h2>Email: {user.email}</h2>
-            <h4>Edad: {user.edad}</h4>
+            <h4>Edad: {user.edad}</h4> */}
+            <Titulo user={user} colorNombre={"red"}/>
+            <Email />
+            <Edad />
         </div>
     )
 }

@@ -1,11 +1,12 @@
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-import './App.css'
+// import './App.css'
 // Cuando importo sin las {} es porque el export es default
 
-import { Ejemplo1 } from './Ejemplos/Ejemplo1'
+import { Ejemplo1 } from './components/Ejemplos/Ejemplo1'
 import { UserCard } from './components/UserCard/UserCard'
+import { Navbar } from './components/Navbar/Navbar'
 // Cuando importo con las { } es porque el export no es default
 
 function App() {
@@ -32,12 +33,13 @@ function App() {
   return (
     <>
       {/* <Ejemplo1 /> */}
+      <Navbar/>
       <h2>Usuarios: </h2>
 
 
       {
         usuarios.map(user => (
-          <UserCard user={user} colorNombre={"red"} />
+          <UserCard user={user}/>
         ))
       }
 
